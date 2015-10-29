@@ -1,0 +1,17 @@
+<div style="text-align: center">
+  <div id="player_names">
+    <h1><%= @game.player_one.name %> vs <%= @game.player_two.name %></h1>
+  </div>
+
+  <div id="player_two_hp">
+    <%= @game.player_two.name %>: <%= @game.player_two.hitpoints %>/60HP
+  </div>
+
+  <div id="player_one_hp">
+    <%= @game.player_one.name %>: <%= @game.player_one.hitpoints %>/60HP
+  </div>
+  
+  <div id="attack">
+    <form action='/attack'><input type="submit" value="Attack"></form>
+  </div>
+</div>
